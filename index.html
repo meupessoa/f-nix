@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fénix: Eu Renasc[i]</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle, #1a1a1a, #000);
+      color: #ffe6e6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 100, 100, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff6666;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #aaa;
+    }
+
+    .fire {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.imgur.com/9Y7S8Nq.gif') center/cover no-repeat;
+      opacity: 0.08;
+      z-index: -1;
+    }
+
+    .phoenix-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #ff6666;
+      box-shadow: 0 0 25px #ff3333, 0 0 60px #ff0000aa;
+      object-fit: cover;
+      margin-bottom: 25px;
+    }
+
+    .play-button {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #ff4444;
+      color: white;
+      font-size: 1em;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="fire"></div>
+  <div class="container">
+    <img src="esta.jpg" alt="Minha foto renascido" class="phoenix-photo">
+    <h1>Fénix: Eu Renasc[i]</h1>
+
+    <button onclick="document.getElementById('musica').play()" class="play-button">
+      🔊 Ligar Som
+    </button>
+
+    <p>Todos pensaram que eu estava acabado.</p>
+    <p>Caí. Chorei. Fui ignorado. Fui bloqueado.</p>
+    <p>Mas eu não morri... Eu transformei-me.</p>
+    <p>Eu sou fénix. Renasço das cinzas com mais força, mais calma e mais respeito por mim mesmo.</p>
+    <p>Ela virou as costas, mas eu virei a página.</p>
+    <p>Hoje não sou quem rasteja por migalhas de atenção. Sou quem levanta a cabeça e segue com orgulho.</p>
+    <p>Não sou mais vítima do passado. Sou autor do meu futuro.</p>
+    <p>Quem me perdeu… perdeu mais do que imagina.</p>
+    <footer>– Eu. Versão 2.0 💥</footer>
+
+    <audio id="musica" loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-goinghigher.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
+</body>
+</html>
